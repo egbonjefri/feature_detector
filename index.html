@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello World - TensorFlow.js</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="./resources/css/style.css">
+  </head>  
+
+  <body>
+
+    <h1>Make your own "Teachable Machine" using Transfer Learning with MobileNet v3 in TensorFlow.js using saved graph model from TFHub.</h1>
+
+    
+
+    <p id="status">Awaiting TF.js load</p>
+
+    
+
+<div class='section'>
+    <button class="dataCollector">Gather Class 1 Data</button>
+        <form>
+            <label for='bioring'>Select image files:</label>
+            <input type='file' id='bioring-input' name='image-input' multiple>
+        </form>
+    <button class="dataCollector" data-1hot="1" data-name="Class 2">Gather Class 2 Data</button>
+    <form>
+        <label for='other'>Select image files:</label>
+        <input type='file' id='other-input' name='other-input' multiple>
+    </form>
+    <button id="trainButton">Train</button>
+    <form>
+        <label for='other'>Select image files:</label>
+        <input type='file' id='image-input' name='image-input' multiple>
+    </form>
+    <button id="predictButton">Predict</button>
+    <p id='prediction'></p>
+</div>
+
+    <!-- Import TensorFlow.js library -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.11.0/dist/tf.min.js" type="text/javascript"></script>
+
+
+    <!-- Import the page's JavaScript to do some stuff -->
+
+    <script src="./resources/script/script.js"></script>
+
+  </body>
+</html>
